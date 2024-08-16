@@ -54,9 +54,9 @@ export function SearchClick() {
               <span className="sr-only">Icon description</span>
             </button>
           </Link>
-          <h1 className='text-3xl font-bold text-white'>Audit Report</h1>
+          <h1 className='text-3xl font-bold text-white flex-grow md:ml-8 p-4 flex flex-col'>Audit Report</h1>
         </div>
-        <input type="text" placeholder="Contract Address" className="rounded-md w-64 h-9 placeholder-black font-semibold" />
+        <input type="text" placeholder="Contract Address:-" className="rounded-md w-64 h-9 placeholder-black font-semibold" />
       </div>
 
       {/* Main content and boxes */}
