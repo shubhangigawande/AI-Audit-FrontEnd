@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export function Auditing() {
@@ -7,7 +7,7 @@ export function Auditing() {
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
-  // State to track the visibility of the button
+  
   const [isButtonVisible, setIsButtonVisible] = useState(true);
 
   // Function to handle click on any icon or button
