@@ -43,7 +43,7 @@ export function SearchClick() {
   );
 
   return (
-    <div className='container mx-auto bg-slate-800'>
+    <div className='container mx-auto bg-SearchClick'>
       <div className='flex items-center justify-between p-4'>
         <div className='flex items-center'>
           <Link to="/">
@@ -62,23 +62,23 @@ export function SearchClick() {
       {/* Main content and boxes */}
       <div className="flex-grow md:ml-24 p-6 flex flex-col">
         <div className="flex flex-wrap gap-4 md:gap-8 h-auto">
-          <div className="w-full sm:w-1/2 h-36 md:w-60 bg-white shadow-md rounded-md p-4 mb-4">
+          <div className="w-full sm:w-1/2 h-36 md:w-60 bg-white shadow-custom-black rounded-md p-4 mb-4">
             <h1>80 | 89</h1>
           </div>
-          <div className="w-full sm:w-1/2 md:w-60 bg-white shadow-md rounded-md p-4 mb-4">
+          <div className="w-full sm:w-1/2 md:w-60 bg-white shadow-custom-black rounded-md p-4 mb-4">
             fjgfh
           </div>
-          <div className="w-full sm:w-1/2 md:w-60 bg-white shadow-md rounded-md p-4 mb-4">
+          <div className="w-full sm:w-1/2 md:w-60 bg-white shadow-custom-black rounded-md p-4 mb-4">
             fjgfh
           </div>
-          <div className="w-full sm:w-1/2 md:w-60 bg-white shadow-md rounded-md p-4 mb-4">
+          <div className="w-full sm:w-1/2 md:w-60 bg-white shadow-custom-black rounded-md p-4 mb-4">
             fjgfh
           </div>
         </div>
 
         {/* Table */}
-        <div className="overflow-x-auto mt-6 w-11/12">
-          <table className="min-w-full bg-white rounded-lg border-gray-300">
+        <div className="overflow-x-auto mt-6 w-11/12 shadow-custom-black">
+          <table className="min-w-full bg-white rounded-lg border-gray-300 ">
             <thead>
               <tr className="border-b border-gray-300">
                 <th className="p-3 text-center">

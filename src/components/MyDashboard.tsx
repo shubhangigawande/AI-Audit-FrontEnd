@@ -32,7 +32,7 @@ export function MyDashboard() {
   );
 
   return (
-    <div className='container mx-auto bg-blue-950'>
+    <div className='container mx-auto bg-customblue'>
       <div className='flex items-center justify-between p-4'>
         <div className='flex items-center'>
           <Link to="/">
@@ -55,7 +55,7 @@ export function MyDashboard() {
 
         {/* Table */}
         <div className="overflow-x-auto mt-6 w-11/12">
-          <table className="min-w-full bg-sky-900 text-white rounded-lg border-gray-300">
+          <table className="min-w-full bg-myDashboard text-white rounded-lg border-gray-300">
             <thead>
               <tr className="border-b border-black">
                 
@@ -77,7 +77,7 @@ export function MyDashboard() {
               {/* Pagination */}
               <tr>
                 <td colSpan={4} className="py-6">
-                  <div className="flex justify-end space-x-3">
+                  <div className="flex justify-end space-x-3 mr-11">
                     <button
                       onClick={() => handlePageChange(currentPage - 1)}
                       disabled={currentPage === 1}

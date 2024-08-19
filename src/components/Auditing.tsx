@@ -30,11 +30,11 @@ export function Auditing() {
         </div>
 
         {!isButtonVisible && (
-          <Link to="/MyDashboard"><button className='bg-green-500 font-semibold text-white ml-96 px-4 py-2 rounded mr-[-23rem] hover:bg-green-600'>MyDashboard</button></Link>
+          <Link to="/MyDashboard"><button className='bg-customGreen font-semibold text-white ml-96 px-4 py-2 rounded mr-[-26rem] hover:bg-green-600'>MyDashboard</button></Link>
         )}
 
         {/* The button opens the modal, no <Link> wrapping needed */}
-        <button onClick={openModal} className='bg-green-500 font-semibold text-white px-4 py-2 rounded hover:bg-green-600'>
+        <button onClick={openModal} className='bg-customGreen font-semibold text-white px-4 py-2 rounded hover:bg-green-600'>
           WalletConnect
         </button>
       </div>
@@ -150,11 +150,11 @@ export function Auditing() {
         </div>
       )}
 
-      <div className='relative container mx-auto bg-blue-950 text-white p-6 h-[35rem]'>
+      <div className='relative container mx-auto bg-customblue text-white p-6 h-[35rem]'>
         <div className='ml-52 text-left mt-7'>
           <h2 className='text font-normal'>Provable Trust For All</h2>
           <h1 className='text-5xl font-medium mt-5'>
-            Trusted Infrastructure for  <span className='text-green-400'>Web-3</span>
+            Trusted Infrastructure for  <span className='text-customGreen'>Web-3</span>
           </h1>
           <p className='font-semibold mt-6 text-gray-400 text-1xl'>
             AI - Auditing is Web3's leading smart contract auditor and provides a <br />
@@ -171,7 +171,7 @@ export function Auditing() {
 
             <input type='text' placeholder='Search Project by Token/ Contact address' className='w-full max-w-md p-2 text-black rounded-l h-12 placeholder-white font-semibold bg-gray-300 text-center' />
             <Link to="/SearchClick">
-              <button className='bg-green-400 p-2 h-12 rounded-r hover:bg-green-600 w-12'>
+              <button className='bg-customGreen p-2 h-12 rounded-r hover:bg-green-600 w-12'>
                 <i className='fas fa-search'></i>
               </button>
             </Link>
