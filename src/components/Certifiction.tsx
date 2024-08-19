@@ -1,4 +1,5 @@
 export function Certification(){
+    
     return(
         <div className='flex items-center mt-2 space-x-12'>
 
@@ -44,6 +45,9 @@ export function Certification(){
                         data security for millions of users."
                     </p>
                 </div>
+
+
+
 </div>
     )
 }

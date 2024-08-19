@@ -169,9 +169,9 @@ export function Auditing() {
               </select>
             </div>
 
-            <input type='text' placeholder='Search Project by Token/ Contact address' className='w-full max-w-md p-2 rounded-l h-12 placeholder-white font-semibold bg-gray-300 text-center' />
+            <input type='text' placeholder='Search Project by Token/ Contact address' className='w-full max-w-md p-2 text-black rounded-l h-12 placeholder-white font-semibold bg-gray-300 text-center' />
             <Link to="/SearchClick">
-              <button className='bg-green-400 text-white p-2 h-12 rounded-r hover:bg-green-600 w-12'>
+              <button className='bg-green-400 p-2 h-12 rounded-r hover:bg-green-600 w-12'>
                 <i className='fas fa-search'></i>
               </button>
             </Link>

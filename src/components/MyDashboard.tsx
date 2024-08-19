@@ -3,8 +3,12 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 export function MyDashboard() {
-
   const [data, setData] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [selectedItems, setSelectedItems] = useState(new Set());
+
+  const itemsPerPage = 5;
+  const totalPages = Math.ceil(data.length / itemsPerPage);
 
   useEffect(() => {
     axios.get('/data.json')
@@ -15,6 +19,17 @@ export function MyDashboard() {
         console.error('Error fetching data:', error);
       });
   }, []);
+
+  const handlePageChange = (pageNumber) => {
+    if (pageNumber > 0 && pageNumber <= totalPages) {
+      setCurrentPage(pageNumber);
+    }
+  };
+
+  const currentItems = data.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
 
   return (
     <div className='container mx-auto bg-blue-950'>
@@ -39,23 +54,51 @@ export function MyDashboard() {
         </div>
 
         {/* Table */}
-        <div className="overflow-x-auto mt-12 w-11/12 shadow-custom-black">
-          <table className="min-w-full bg-sky-900  text-white">
+        <div className="overflow-x-auto mt-6 w-11/12">
+          <table className="min-w-full bg-sky-900 text-white rounded-lg border-gray-300">
             <thead>
               <tr className="border-b border-black">
-                <th className="p-3 text-center">Address</th>
-                <th className="p-3 text-center">Network</th>
-                <th className="p-3 text-center">Report</th>
+                
+                <th className="p-3 text-center">Bug ID</th>
+                <th className="p-3 text-center">Severity</th>
+                <th className="p-3 text-center">Description</th>
               </tr>
             </thead>
             <tbody>
-              {data.map((item, index) => (
+              {currentItems.map((item, index) => (
                 <tr key={index} className="border-b border-black">
+                  
                   <td className="p-3 text-center">{item["Bug ID"]}</td>
                   <td className="p-3 text-center">{item["Severity"]}</td>
                   <td className="p-3 text-center">{item["Description"]}</td>
                 </tr>
               ))}
+
+              {/* Pagination */}
+              <tr>
+                <td colSpan={4} className="py-6">
+                  <div className="flex justify-end space-x-3">
+                    <button
+                      onClick={() => handlePageChange(currentPage - 1)}
+                      disabled={currentPage === 1}
+                      className="px-3 py-1 h-5 bg-sky-700 text-black rounded-md shadow-md flex items-center text-sm justify-center"
+                    >
+                      Prev
+                    </button>
+
+                    <button
+                      onClick={() => handlePageChange(currentPage + 1)}
+                      disabled={currentPage === totalPages}
+                      className="px-3 py-1 h-5 bg-sky-700  text-black rounded-md shadow-md flex items-center text-sm justify-center"
+                    >
+                      Next
+                    </button>
+                    {/* <span className="flex items-center">
+                      Page: &nbsp;<span className='px-3 py-1 h-7 w-14 bg-gray-100 text-gray-700 rounded-md flex items-center justify-center'>{currentPage}</span>  &nbsp; of {totalPages} &nbsp;&nbsp;
+                    </span> */}
+                  </div>
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>

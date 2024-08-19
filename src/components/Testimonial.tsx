@@ -144,7 +144,7 @@ export function Testimonials() {
 
                 <div className='flex items-center mt-2 space-x-8 mr-8'>
 
-                    <div className='bg-white w-96 h-60 border border-gray-400 shadow-custom-gray p-4 rounded-lg flex flex-col ml-16 mt-4'>
+                    <div className='bg-white w-[23rem] h-60 border border-gray-400 shadow-custom-gray p-4 rounded-lg flex flex-col ml-16 mt-4'>
                         <div className="ml-4">
                             <div className='flex items-center mb-2'>
                                 <img src='/images/c1.png' className='h-14 w-14 mr-3' alt="DropBox" />
@@ -160,7 +160,7 @@ export function Testimonials() {
                         </div>
                     </div>
 
-                    <div className='bg-white w-96 h-60 border border-gray-400 shadow-custom-gray p-4 rounded-lg flex flex-col ml-16 mt-4'>
+                    <div className='bg-white w-[23rem] h-60 border border-gray-400 shadow-custom-gray p-4 rounded-lg flex flex-col ml-16 mt-4'>
                         <div className="ml-4">
                             <div className='flex items-center mb-2'>
                                 <img src='/images/c2.png' className='h-14 w-14 mr-3' alt="DropBox" />
@@ -176,7 +176,7 @@ export function Testimonials() {
                         </div>
                     </div>
 
-                    <div className='bg-white w-96 h-60 border border-gray-400 shadow-custom-gray p-4 rounded-lg flex flex-col ml-16 mt-4'>
+                    <div className='bg-white w-[23rem] h-60 border border-gray-400 shadow-custom-gray p-4 rounded-lg flex flex-col ml-16 mt-4'>
                         <div className="ml-4">
                             <div className='flex items-center mb-2'>
                                 <img src='/images/c3.png' className='h-14 w-14 mr-3' alt="DropBox" />
