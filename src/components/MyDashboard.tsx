@@ -20,7 +20,7 @@ export function MyDashboard() {
       });
   }, []);
 
-  const handlePageChange = (pageNumber) => {
+  const handlePageChange = (pageNumber:number) => {
     if (pageNumber > 0 && pageNumber <= totalPages) {
       setCurrentPage(pageNumber);
     }
