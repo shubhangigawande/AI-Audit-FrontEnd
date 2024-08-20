@@ -43,7 +43,7 @@ export function SearchClick() {
   );
 
   return (
-    <div className='container mx-auto bg-SearchClick h-full'>
+    <div className='container mx-auto min-h-screen bg-SearchClick'>
       <div className='flex items-center justify-between p-4'>
         <div className='flex items-center'>
           <Link to="/">
@@ -81,7 +81,7 @@ export function SearchClick() {
           <table className="min-w-full bg-white rounded-lg border-gray-300 ">
             <thead>
               <tr className="border-b border-gray-300">
-                <th className="p-3 text-center">
+                {/* <th className="p-3 text-center">
                   <input
                     type="checkbox"
                     onChange={(e) => {
@@ -93,7 +93,7 @@ export function SearchClick() {
                       ));
                     }}
                   />
-                </th>
+                </th> */}
                 <th className="p-3 text-center">Bug ID</th>
                 <th className="p-3 text-center">Severity</th>
                 <th className="p-3 text-center">Description</th>
@@ -102,13 +102,13 @@ export function SearchClick() {
             <tbody>
               {currentItems.map((item, index) => (
                 <tr key={index} className="border-b border-gray-300">
-                  <td className="p-3 text-center">
+                  {/* <td className="p-3 text-center">
                     <input
                       type="checkbox"
                       checked={selectedItems.has((currentPage - 1) * itemsPerPage + index)}
                       onChange={() => handleCheckboxChange((currentPage - 1) * itemsPerPage + index)}
                     />
-                  </td>
+                  </td> */}
                   <td className="p-3 text-center">{item["Bug ID"]}</td>
                   <td className="p-3 text-center">{item["Severity"]}</td>
                   <td className="p-3 text-center">{item["Description"]}</td>
@@ -145,5 +145,6 @@ export function SearchClick() {
         </div>
       </div>
     </div>
-  )
+  );
 }
+  

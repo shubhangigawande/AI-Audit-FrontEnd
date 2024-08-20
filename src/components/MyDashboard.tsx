@@ -32,7 +32,7 @@ export function MyDashboard() {
   );
 
   return (
-    <div className='container mx-auto bg-customblue'>
+    <div className='container mx-auto min-h-screen bg-customblue'>
       <div className='flex items-center justify-between p-4'>
         <div className='flex items-center'>
           <Link to="/">
@@ -81,7 +81,7 @@ export function MyDashboard() {
                     <button
                       onClick={() => handlePageChange(currentPage - 1)}
                       disabled={currentPage === 1}
-                      className="px-3 py-1 h-5 bg-sky-700 text-black rounded-md shadow-md flex items-center text-sm justify-center"
+                      className="px-3 py-1 h-5 bg-blue-950  text-white font-semibold rounded-md shadow-md flex items-center text-sm justify-center"
                     >
                       Prev
                     </button>
@@ -89,7 +89,7 @@ export function MyDashboard() {
                     <button
                       onClick={() => handlePageChange(currentPage + 1)}
                       disabled={currentPage === totalPages}
-                      className="px-3 py-1 h-5 bg-sky-700  text-black rounded-md shadow-md flex items-center text-sm justify-center"
+                      className="px-3 py-1 h-5 bg-blue-950  text-white font-semibold rounded-md shadow-md flex items-center text-sm justify-center"
                     >
                       Next
                     </button>
