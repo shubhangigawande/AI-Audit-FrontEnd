@@ -156,7 +156,7 @@ export function Testimonials() {
                                 <span className="text-black">cloud security best practice</span> and <br />
                                 continuous improvement in cloud <br />security Management."
                             </p>
-                            <h1 className="text-green-500 text-lg mt-4 font-semibold">Learn More</h1>
+                            <h1 className="text-customGreen text-lg mt-4 font-semibold">Learn More</h1>
                         </div>
                     </div>
 
@@ -172,7 +172,7 @@ export function Testimonials() {
                                 standards</span> of security for payment card <br />
                                 data and transactions".
                             </p>
-                            <h1 className="text-green-500 text-lg mt-6 font-semibold">Learn More</h1>
+                            <h1 className="text-customGreen text-lg mt-6 font-semibold">Learn More</h1>
                         </div>
                     </div>
 
@@ -188,7 +188,7 @@ export function Testimonials() {
                                 its dedication to managing and<br />
                                 <span className="text-black">reducing cybersecurity risk</span> in a <br />systematic and efficient manner."
                             </p>
-                            <h1 className="text-green-500 text-lg mt-4 font-semibold">Learn More</h1>
+                            <h1 className="text-customGreen text-lg mt-4 font-semibold">Learn More</h1>
                         </div>
                     </div>
 

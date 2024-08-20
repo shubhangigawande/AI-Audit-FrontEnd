@@ -153,7 +153,7 @@ export function Auditing() {
       <div className='relative container mx-auto bg-customblue text-white p-6 h-[35rem]'>
         <div className='ml-52 text-left mt-7'>
           <h2 className='text font-normal'>Provable Trust For All</h2>
-          <h1 className='text-5xl font-medium mt-5'>
+          <h1 className='text-5xl mt-5 font-semibold'>
             Trusted Infrastructure for  <span className='text-customGreen'>Web-3</span>
           </h1>
           <p className='font-semibold mt-6 text-gray-400 text-1xl'>

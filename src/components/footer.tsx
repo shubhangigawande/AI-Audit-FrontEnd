@@ -41,7 +41,7 @@ export function Footer() {
                         <h1 >AI Audit</h1>
                         <h1 >Telegram</h1>
                         <h1 >Youtube</h1>
-                        <h1 >Mediumt</h1>
+                        <h1 >Medium</h1>
                         <h1 >Linkedin</h1>
                         <h1 >Wechat</h1>
                         <h1 >Discord</h1>

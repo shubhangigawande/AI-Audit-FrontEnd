@@ -43,7 +43,7 @@ export function SearchClick() {
   );
 
   return (
-    <div className='container mx-auto bg-SearchClick'>
+    <div className='container mx-auto bg-SearchClick h-full'>
       <div className='flex items-center justify-between p-4'>
         <div className='flex items-center'>
           <Link to="/">

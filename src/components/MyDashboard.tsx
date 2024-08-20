@@ -5,7 +5,7 @@ import axios from 'axios';
 export function MyDashboard() {
   const [data, setData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [selectedItems, setSelectedItems] = useState(new Set());
+  // const [selectedItems, setSelectedItems] = useState(new Set());
 
   const itemsPerPage = 5;
   const totalPages = Math.ceil(data.length / itemsPerPage);
