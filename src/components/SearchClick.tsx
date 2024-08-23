@@ -215,7 +215,7 @@ export function SearchClick() {
         {/* Modal */}
         {isModalOpen && clickedRecord && (
           <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-75">
-            <div className="bg-white rounded-lg shadow-lg max-w-lg w-[52rem] h-[35rem] p-6">
+            <div className="bg-white rounded-lg shadow-lg max-w-lg w-[52rem] p-6">
               {/* Modal Header */}
               <div className="flex justify-between items-center pb-2 mb-4">
                 <h1 className="text-3xl text-gray-600 font-semibold">
@@ -242,26 +242,31 @@ export function SearchClick() {
                 <div className="font-semibold ">
                   <h1 className="text-gray-600 mt-8  text-xl">Problem</h1>
                   <p className="mt-2">{clickedRecord["problem"]}</p>
-                  <p className="text-sm text-gray-500 font-light">Unexpected Logout occurs when user clicks 'Save'</p>
+                  <p className="text-sm text-gray-500 font-san">Unexpected Logout occurs when user clicks 'Save'</p>
                 </div>
 
                 <div className="font-semibold">
                   <h1 className="text-gray-600 mt-8 text-xl">Solution</h1>
                   <p className="mt-2">{clickedRecord["solution"]}</p>
-                  <p className="text-sm text-gray-500 font-san">Fixed the session </p>
+                  <p className="text-sm text-gray-500 font-san">Fixed the session timeout setting and updated the <br /> save function to prevent session termination.</p>
                 </div>
 
                 <div className="font-semibold">
                   <h1 className="text-gray-600 mt-8 text-xl">Recommendations</h1>
-                  <p className="mt-8">{clickedRecord["recommendations"]}</p>
+                  <p className="mt-2">{clickedRecord["recommendations"]}</p>
+                  <p className="text-sm text-gray-500 font-san">Regularly review and test session managment <br /> setting to ensure stability.</p>
                 </div>
 
                 <button
-                  onClick={closeModal}
-                  className="bg-gray-300 w-24 mt-8 h-8 rounded-md"
-                >
-                  Close
-                </button>
+  onClick={closeModal}
+  className="bg-gray-300 w-24 h-8 rounded-md mt-5"
+>
+  Close
+</button>
+
+
+                
+
               </div>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export function Auditing() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -14,19 +14,7 @@ export function Auditing() {
   const handleClick = () => {
     setIsButtonVisible(false);
   };
-
-
-  const [searchQuery, setSearchQuery] = useState("");
-  const navigate = useNavigate();
-
-  const handleSearch = () => {
-    if (searchQuery.trim()) {
-      // Only navigate if the searchQuery is not empty
-      navigate("/SearchClick");
-    } else {
-      alert("Please enter a search query before proceeding.");
-    }
-  };
+  
 
 
   return (
@@ -174,8 +162,7 @@ export function Auditing() {
             comprehensive suite of tools to secure the industry at scale.
           </p>
 
-          <div className="flex items-center mt-6">
-
+          <div className='flex items-center mt-6 '>
             <div className='px-2'>
               <select className='h-12 w-20 text-center rounded-lg text-gray-700'>
                 <option selected>ETH</option>
@@ -183,19 +170,12 @@ export function Auditing() {
               </select>
             </div>
 
-            <input
-              type="text"
-              placeholder="Search Project by Token/Contact address"
-              className="w-full max-w-md p-2 text-black rounded-l h-12 placeholder-white font-semibold bg-gray-300 text-center"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-            />
-            <button
-              onClick={handleSearch}
-              className="bg-customGreen p-2 h-12 rounded-r hover:bg-green-600 w-12"
-            >
-              <i className="fas fa-search"></i>
-            </button>
+            <input type='text' placeholder='Search Project by Token/ Contact address' className='w-full max-w-md p-2 text-black rounded-l h-12 placeholder-white font-semibold bg-gray-300 text-center' />
+            <Link to="/SearchClick">
+              <button className='bg-customGreen p-2 h-12 rounded-r hover:bg-green-600 w-12'>
+                <i className='fas fa-search'></i>
+              </button>
+            </Link>
           </div>
         </div>
 

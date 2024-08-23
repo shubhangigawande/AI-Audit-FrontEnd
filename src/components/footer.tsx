@@ -3,7 +3,7 @@ export function Footer() {
         <div className='container mx-auto h-auto bg-black flex justify-center'>
             
              <div className="w-full md:w-1/3">
-                <div className='mt-4 ml-36'>
+                <div className='mt-4 ml-14'>
                 <div className=' text-lg text-white mt-16 '>
                     <div className="flex">
                 <img src='/images/image.png' className='w-14 mr-3'/>
