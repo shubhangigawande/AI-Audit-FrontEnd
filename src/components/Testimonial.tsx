@@ -1,6 +1,6 @@
 export function Testimonials() {
     return (
-        <div className='container mx-auto h-[85rem] bg-white justify-center '>
+        <div className='container mx-auto h-[85rem] bg-white justify-center w-[82rem]'>
 
 
             <div className='flex space-x-8 container'>

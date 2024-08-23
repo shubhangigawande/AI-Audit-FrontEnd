@@ -1,9 +1,9 @@
 export function Certification(){
     
     return(
-        <div className='flex items-center mt-2 space-x-12'>
+        <div className='flex items-center mt-2 space-x-12 '>
 
-                <div className="bg-white w-64 h-56 border shadow-custom-gray p-4 rounded-lg ml-16 mt-10 flex flex-col">
+                <div className="bg-white w-64 ml-28 h-56 border shadow-custom-gray p-4 rounded-lg ml-16 mt-10 flex flex-col">
                     <div className="flex items-start">
                         <img src="/images/m14.png" className="h-10 mr-3" alt="Microsoft Azure" />
                         <h1 className="font-semibold text-xl text-blue-900">Microsoft Azure</h1>

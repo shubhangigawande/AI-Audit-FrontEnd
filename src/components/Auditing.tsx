@@ -7,7 +7,7 @@ export function Auditing() {
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
-  
+
   const [isButtonVisible, setIsButtonVisible] = useState(true);
 
   // Function to handle click on any icon or button
@@ -18,26 +18,32 @@ export function Auditing() {
 
   return (
     <div>
-      <div className='container mx-auto h-10 bg-white flex items-center justify-center'>
+      <div className='container mx-auto h-10 bg-white flex items-center justify-center w-[82rem]'>
         <p> Introduction AI - Auditing Learn more</p>
       </div>
 
-      <div className='container mx-auto h-14   bg-black flex items-center justify-between text-white p-4'>
+      <div className='container mx-auto h-14 bg-black flex items-center justify-between text-white p-4 w-[82rem]'>
         <div className='flex items-center h-9'>
-          <img src='/images/image.png' className=' mr-3 h-12' alt='Auditing Logo' />
-
+          <img src='/images/image.png' className='mr-3 h-12' alt='Auditing Logo' />
           <h1 className='text-xl font-medium'>AUDITING</h1>
         </div>
 
-        {!isButtonVisible && (
-          <Link to="/MyDashboard"><button className='bg-customGreen font-semibold text-white ml-96 px-4 py-2 rounded mr-[-26rem] hover:bg-green-600'>MyDashboard</button></Link>
-        )}
+        <div className='flex items-center'>
+          {!isButtonVisible && (
+            <Link to="/MyDashboard">
+              <button className='bg-customGreen font-semibold text-white px-4 py-2 rounded mr-1.5 lg:ml-96 hover:bg-green-600'>
+                MyDashboard
+              </button>
+            </Link>
+          )}
 
-        {/* The button opens the modal, no <Link> wrapping needed */}
-        <button onClick={openModal} className='bg-customGreen font-semibold text-white px-4 py-2 rounded hover:bg-green-600'>
-          WalletConnect
-        </button>
+          <button onClick={openModal} className='bg-customGreen font-semibold text-white px-4 py-2 rounded hover:bg-green-600'>
+            WalletConnect
+          </button>
+        </div>
       </div>
+
+
 
       {/* Conditional rendering of the modal */}
       {isModalOpen && (
@@ -133,24 +139,18 @@ export function Auditing() {
           </button>
         </div> */}
 
-
-
               <div>
                 <h3>dsvcdsv</h3>
                 <h3>dsvcdsv</h3>
               </div>
 
-
             </div>
-
-
-
 
           </div>
         </div>
       )}
 
-      <div className='relative container mx-auto bg-customblue text-white p-6 h-[35rem]'>
+      <div className='relative container mx-auto bg-customblue text-white p-6 h-[35rem] w-[82rem]'>
         <div className='ml-52 text-left mt-7'>
           <h2 className='text font-normal'>Provable Trust For All</h2>
           <h1 className='text-5xl mt-5 font-semibold'>
