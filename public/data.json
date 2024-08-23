@@ -1,21 +1,33 @@
-[
-    { "Bug ID": "BG001", "Severity": "Low", "Description": "Incorrect resolved percentage stat", "Date Reported": "05/01/2023" },
-    { "Bug ID": "BG002", "Severity": "high", "Description": "Incorrect resolved percentage stat", "Date Reported": "05/01/2023" },
-    { "Bug ID": "BG003", "Severity": "Low", "Description": "Incorrect resolved percentage stat", "Date Reported": "05/01/2023" },
-    { "Bug ID": "BG004", "Severity": "Low", "Description": "Incorrect resolved percentage stat", "Date Reported": "05/01/2023" },
-    { "Bug ID": "BG005", "Severity": "critical", "Description": "Incorrect resolved percentage stat", "Date Reported": "05/01/2023" },
-    { "Bug ID": "BG006", "Severity": "Low", "Description": "Incorrect resolved percentage stat", "Date Reported": "05/01/2023" },
-    { "Bug ID": "BG007", "Severity": "Low", "Description": "Incorrect resolved percentage stat", "Date Reported": "05/01/2023" },
-    { "Bug ID": "BG001", "Severity": "Low", "Description": "Incorrect resolved percentage stat", "Date Reported": "05/01/2023" },
-    { "Bug ID": "BG001", "Severity": "high", "Description": "Incorrect resolved percentage stat", "Date Reported": "05/01/2023" },
-    { "Bug ID": "BG001", "Severity": "Low", "Description": "Incorrect resolved percentage stat", "Date Reported": "05/01/2023" },
-    { "Bug ID": "BG001", "Severity": "critical", "Description": "Incorrect resolved percentage stat", "Date Reported": "05/01/2023" },
-    { "Bug ID": "BG001", "Severity": "Low", "Description": "Incorrect resolved percentage stat", "Date Reported": "05/01/2023" },
-    { "Bug ID": "BG001", "Severity": "Low", "Description": "Incorrect resolved percentage stat", "Date Reported": "05/01/2023" },
-    { "Bug ID": "BG001", "Severity": "Low", "Description": "Incorrect resolved percentage stat", "Date Reported": "05/01/2023" },
-    { "Bug ID": "BG001", "Severity": "high", "Description": "Incorrect resolved percentage stat", "Date Reported": "05/01/2023" },
-    { "Bug ID": "BG001", "Severity": "Low", "Description": "Incorrect resolved percentage stat", "Date Reported": "05/01/2023" },
-    { "Bug ID": "BG001", "Severity": "Low", "Description": "Incorrect resolved percentage stat", "Date Reported": "05/01/2023" }
-    
-  ]
+
   
+
+[
+  {
+    "score": "85%",
+      "level": "High",
+      "description": "Potential for unauthorized access to admin functions due to lack of proper access control checks.",
+      "recomendation": "Implement stricter access control mechanisms to ensure only authorized users can access admin functions.",
+      "_id": "66c34763d9c838a7af2cd40d"
+  },
+  {
+    "high": "2",
+      "level": "High",
+      "description": "Risk of setting a non-contract address as implementation, leading to potential contract failures.",
+      "recomendation": "Enhance validation checks to ensure that only contract addresses can be set as implementations.",
+      "_id": "66c34763d9c838a7af2cd40e"
+  },
+  {
+    "medium": "1",
+      "level": "Medium",
+      "description": "Fallback function can be called by anyone, which may lead to unexpected behavior.",
+      "recomendation": "Consider adding restrictions to the fallback function to limit its accessibility.",
+      "_id": "66c34763d9c838a7af2cd40f"
+  },
+  {
+    "low": "1",
+      "level": "Low",
+      "description": "Use of deprecated Solidity version (0.4.24) which may have known vulnerabilities.",
+      "recomendation": "Upgrade to a more recent and supported version of Solidity.",
+      "_id": "66c34763d9c838a7af2cd410"
+  }
+]
